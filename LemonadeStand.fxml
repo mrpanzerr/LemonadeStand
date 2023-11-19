@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" textAlignment="CENTER" wrappingWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lemonade Stand" textAlignment="CENTER" wrappingWidth="600.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <SplitPane dividerPositions="0.4981751824817518" layoutX="229.0" layoutY="132.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="598.0">
+               <children>
+                  <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RASPBERRY LEMONADE" textAlignment="CENTER" wrappingWidth="179.259765625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Pictures/Saved%20Pictures/Raspberry-Lemonade-8-720x720.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="SMALL" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="LARGE" />
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BLUEBERRY LEMONADE" textAlignment="CENTER" wrappingWidth="179.259765625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Pictures/Saved%20Pictures/blueberry-lemonade-afarmgirlsdabbles-01s.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="SMALL" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="LARGE" />
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE-RASBERRY LEMONADE" textAlignment="CENTER" wrappingWidth="179.259765625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Pictures/Saved%20Pictures/Blue-Raspberry-Lemonade-8.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="SMALL" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="LARGE" />
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <MenuBar AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="246.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Employee Login">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                              <MenuItem mnemonicParsing="false" text="Apply Discount" />
+                              <MenuItem mnemonicParsing="false" onAction="#openInventoryFile" text="Inventory List" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <SplitPane dividerPositions="0.5" layoutX="410.0" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CART">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ListView prefHeight="200.0" prefWidth="200.0" />
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CLASSIC LEMONADE" textAlignment="CENTER" wrappingWidth="179.259765625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Pictures/Saved%20Pictures/lemonade-lemon-slices-in-glass-square.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="SMALL" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="LARGE" />
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PINK LEMONADE" textAlignment="CENTER" wrappingWidth="179.259765625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Pictures/Saved%20Pictures/pink-lemonade-9.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="SMALL" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="LARGE" />
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
